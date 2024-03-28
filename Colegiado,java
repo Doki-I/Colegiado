@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package colegiado;
+
+import javax.swing.JOptionPane;
+
+public class Colegiado {
+    public static void main(String[] args) {
+        //Este es el inicio de una instancia de RegistroEstudiantes
+        RegistroEstudiantes registro = new RegistroEstudiantes();
+
+        //Aquí se crea una instancia de InterfazUsuario y pasarle la instancia de RegistroEstudiantes
+        InterfazUsuario interfaz = new InterfazUsuario(registro);
+
+        //Aquí comienza la interacción con el usuario
+        interfaz.ejecutar();
+    }
+}
+
